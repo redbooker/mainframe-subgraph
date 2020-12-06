@@ -1,12 +1,12 @@
-specVersion: 0.0.2
+boospecVersion: 0.0.2
 description: Fixed-rate lending protocol on Ethereum
-repository: https://github.com/mainframehq/mainframe-subgraph
+repository: https://github.com/redbooker/mainframe-subgraph
 schema:
   file: ./schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: BalanceSheet
-    network: {{network}}
+    network: kovan
     source:
       abi: BalanceSheet
       address: "{{contracts.balanceSheet.address}}"
@@ -39,7 +39,7 @@ dataSources:
           handler: handleWithdrawCollateral
   - kind: ethereum/contract
     name: Fintroller
-    network: {{network}}
+    network: kovan
     source:
       abi: Fintroller
       address: "{{contracts.fintroller.address}}"
@@ -74,7 +74,7 @@ dataSources:
 templates:
   - kind: ethereum/contract
     name: FyToken
-    network: {{network}}
+    network: kovan
     source:
       abi: FyToken
     mapping:
@@ -113,7 +113,7 @@ templates:
           handler: handleTransfer
   - kind: ethereum/contract
     name: RedemptionPool
-    network: {{network}}
+    network: kovan
     source:
       abi: RedemptionPool
     mapping:
