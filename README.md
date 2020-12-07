@@ -4,7 +4,7 @@ Mainframe is a fixed-rate lending protocol build on the Ethereum blockchain. Thi
 emitted by our smart contracts.
 
 You can interact with the subgraph via The Graph's [hosted
-service](https://thegraph.com/explorer/subgraph/mainframehq/hifi).
+service](https://thegraph.com/explorer/subgraph/redbooker/mainframe).
 
 ## Queries
 
